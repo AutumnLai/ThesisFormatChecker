@@ -135,7 +135,7 @@ def ContentCheck(contextWithoutC,yourContentPageS,yourContentPageE,yourContextSt
 while(True):
     studentID = input("請輸入學號")
     
-    wkdir = "C:/Users/系統組工讀生/Desktop/juanDiTest/"+studentID#改目錄要改這裡
+    wkdir = os.get.getcwd()+studentID#改目錄要改這裡
     filename = "Full-Text.pdf"#檔名改這
     os.chdir(wkdir)
     try:
